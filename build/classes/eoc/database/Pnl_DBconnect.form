@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup1">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+      <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+        <EtchetBorder/>
+      </Border>
+    </Property>
+    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[100, 100]"/>
+    </Property>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="jLbl_connType" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+                      <Component id="rbVzhlad_1" min="-2" pref="81" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="rbVzhlad_2" min="-2" pref="207" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="jLabel5" max="32767" attributes="0"/>
+                          <Component id="jLabel4" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jLabel3" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jLabel2" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="DB_username" max="32767" attributes="0"/>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel6" min="-2" pref="47" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+                              <Component id="DB_password" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="DB_URL" alignment="0" max="32767" attributes="0"/>
+                          <Component id="DB_driver" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="jCB_DBtype" min="-2" pref="107" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="btn_SaveFrame" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lblimg_test" min="-2" pref="20" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="btn_TestSpojenia" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="btn_odpojit" min="-2" pref="91" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jCHB_TCPconnection" pref="100" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLbl_connType" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="rbVzhlad_1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="rbVzhlad_2" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jCB_DBtype" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btn_TestSpojenia" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btn_SaveFrame" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblimg_test" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                  <Component id="btn_odpojit" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jCHB_TCPconnection" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="DB_driver" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                  <Component id="DB_URL" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="DB_username" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="DB_password" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="18" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLbl_connType">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="cc" green="cc" red="ff" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Master/Slave"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jCB_DBtype">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="4">
+            <StringItem index="0" value="Sybase"/>
+            <StringItem index="1" value="Postgres"/>
+            <StringItem index="2" value="MySql"/>
+            <StringItem index="3" value="Firebird"/>
+          </StringArray>
+        </Property>
+        <Property name="selectedIndex" type="int" value="1"/>
+        <Property name="toolTipText" type="java.lang.String" value="Typ prip&#xe1;janej datab&#xe1;zy (Sybase, Postgres, MySql, Firebird)"/>
+        <Property name="name" type="java.lang.String" value="db_type" noResource="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCB_DBtypeActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Typ datab&#xe1;zy:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ovl&#xe1;da&#x10d;:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="DB_driver">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="ovl&#xe1;da&#x10d;"/>
+        <Property name="toolTipText" type="java.lang.String" value="Ovl&#xe1;da&#x10d; datab&#xe1;zy (syst&#xe9;m ur&#x10d;uje automaticky,ale na testovanie je mo&#x17e;n&#xe9; meni&#x165; - no nedoporu&#x10d;uje sa. :-)) "/>
+        <Property name="name" type="java.lang.String" value="db_driver" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Lok&#xe1;tor (URL):"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="DB_URL">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="URL datab&#xe1;zy"/>
+        <Property name="toolTipText" type="java.lang.String" value="Lokaliz&#xe1;cia/adresa datab&#xe1;zy"/>
+        <Property name="name" type="java.lang.String" value="db_url" noResource="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DB_URLActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel5">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="U&#x17e;&#xed;vate&#x13e;sk&#xe9; meno: "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="DB_username">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="meno u&#x17e;&#xed;vate&#x13e;a"/>
+        <Property name="toolTipText" type="java.lang.String" value="U&#x17e;&#xed;vate&#x13e;sk&#xe9; meno (mus&#xed; by&#x165; zadefinovan&#xe9; v datab&#xe1;ze aj v syst&#xe9;me EaSys + pridelen&#xe9; pr&#xed;stupov&#xe9; pr&#xe1;va)"/>
+        <Property name="name" type="java.lang.String" value="db_username" noResource="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DB_usernameActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel6">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="text" type="java.lang.String" value="Heslo:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JPasswordField" name="DB_password">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jPasswordField1"/>
+        <Property name="toolTipText" type="java.lang.String" value="Heslo u&#x17e;&#xed;vate&#x13e;a pre pr&#xed;stup k datab&#xe1;ze"/>
+        <Property name="name" type="java.lang.String" value="db_password" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn_TestSpojenia">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Test spojenia"/>
+        <Property name="toolTipText" type="java.lang.String" value="Pripojenie datab&#xe1;zy pou&#x17e;it&#xed;m aktu&#xe1;lnych nastaven&#xed; "/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_TestSpojeniaActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn_SaveFrame">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ulo&#x17e;"/>
+        <Property name="toolTipText" type="java.lang.String" value="Ulo&#x17e;enie aktu&#xe1;lnych nastaven&#xed; (Vo&#x13e;ba [ Pokra&#x10d;uj ] ich ulo&#x17e;&#xed; autoaticky)"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_SaveFrameActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblimg_test">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/easys/res/img/LED1_0.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+        <Property name="toolTipText" type="java.lang.String" value="Stav pripojenia datab&#xe1;zy"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn_odpojit">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Odpoji&#x165;"/>
+        <Property name="toolTipText" type="java.lang.String" value="Odpojenie pripojenej datab&#xe1;zy"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_odpojitActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCHB_TCPconnection">
+      <Properties>
+        <Property name="selected" type="boolean" value="true"/>
+        <Property name="text" type="java.lang.String" value="TCP connection"/>
+        <Property name="toolTipText" type="java.lang.String" value="Typ datab&#xe1;zov&#xe9;ho pripojenia"/>
+        <Property name="name" type="java.lang.String" value="TCP_connection" noResource="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCHB_TCPconnectionActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Vzhlad:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="rbVzhlad_1">
+      <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="buttonGroup1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Z&#xe1;kladn&#xfd;"/>
+        <Property name="toolTipText" type="java.lang.String" value="Vzhlad obrazovky"/>
+        <Property name="name" type="java.lang.String" value="rbVzhlad_1" noResource="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbVzhlad_1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="rbVzhlad_2">
+      <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="buttonGroup1"/>
+        </Property>
+        <Property name="selected" type="boolean" value="true"/>
+        <Property name="text" type="java.lang.String" value="Roz&#x161;&#xed;ren&#xfd;"/>
+        <Property name="toolTipText" type="java.lang.String" value="Vzhlad obrazovky"/>
+        <Property name="name" type="java.lang.String" value="rbVzhlad_2" noResource="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbVzhlad_2ActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>

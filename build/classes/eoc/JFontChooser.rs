@@ -1,0 +1,11 @@
+eoc.FontChooserDialog$2
+eoc.FontChooserDialog$Closer
+eoc.FontSelectionModel
+eoc.FontChooserDialog$1
+eoc.FontChooserDialog$4
+eoc.DefaultFontSelectionModel
+eoc.JFontChooser
+eoc.FontChooserDialog$3
+eoc.FontChooserDialog
+eoc.FontTracker
+eoc.FontChooserDialog$DisposeOnClose

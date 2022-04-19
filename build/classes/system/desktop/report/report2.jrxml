@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" whenResourceMissingType="Empty" uuid="a3e300c9-17a3-4bab-b81b-ea6a367fb217">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" forecolor="#FFFFFF" fontName="Times New Roman" fontSize="50" isBold="false" pdfFontName="Times-Bold"/>
+	<style name="SubTitle" forecolor="#CCCCCC" fontName="Times New Roman" fontSize="18" isBold="false" pdfFontName="Times-Roman"/>
+	<style name="Column header" forecolor="#666666" fontName="Times New Roman" fontSize="14" isBold="true" pdfFontName="Times-Roman"/>
+	<style name="Detail" mode="Transparent" fontName="Times New Roman" pdfFontName="Times-Roman"/>
+	<style name="Row" mode="Transparent" fontName="Times New Roman" pdfFontName="Times-Roman">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style mode="Opaque" backcolor="#F0EFEF"/>
+		</conditionalStyle>
+	</style>
+	<queryString language="SQL">
+		<![CDATA[select * from nzbd.nz_ESU]]>
+	</queryString>
+	<field name="c_cis_ESU" class="java.lang.String">
+		<fieldDescription><![CDATA[Interné číslo elektronického spisu]]></fieldDescription>
+	</field>
+	<field name="i_Rok_ESU" class="java.lang.Integer">
+		<fieldDescription><![CDATA[Rok, do ktorého spis patrí]]></fieldDescription>
+	</field>
+	<field name="c_typ_el_spisu" class="java.lang.String">
+		<fieldDescription><![CDATA[Typ elektronického spisu (S)tavba, (O)prava, S(F)RB, ....]]></fieldDescription>
+	</field>
+	<field name="c_ucel_spisu" class="java.lang.String"/>
+	<field name="c_zalozil" class="java.lang.String">
+		<fieldDescription><![CDATA[Užívatelské meno zakladajúcej osoby]]></fieldDescription>
+	</field>
+	<field name="d_od" class="java.sql.Date">
+		<fieldDescription><![CDATA[Termín začiatku úlohy]]></fieldDescription>
+	</field>
+	<field name="d_do" class="java.sql.Date">
+		<fieldDescription><![CDATA[Termín ukončenia úlohy]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="102" splitType="Stretch">
+			<image>
+				<reportElement x="725" y="0" width="77" height="102" uuid="7fb94ab0-dde5-41c4-bedc-281d84296687"/>
+				<imageExpression><![CDATA["system/desktop/report/cherry.jpg"]]></imageExpression>
+			</image>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="721" height="66" backcolor="#00CC99" uuid="cf727c26-4a2c-4595-9d56-d9a9eeba4cef"/>
+				<staticText>
+					<reportElement style="Title" x="0" y="0" width="251" height="66" backcolor="#FFFFFF" uuid="ea1b2f20-a40c-483d-bb3a-905926ac1d0f"/>
+					<box topPadding="4" leftPadding="4" bottomPadding="4" rightPadding="4"/>
+					<textElement verticalAlignment="Bottom">
+						<font size="40" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Prvý report]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="SubTitle" x="251" y="37" width="470" height="29" forecolor="#FFFFCC" uuid="e84857ba-5107-4fa0-86b9-c4d18822d65f"/>
+					<textElement textAlignment="Right">
+						<font fontName="Arial" size="18" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Prvý Ivánuškin report, vytvorený v pube Pohoda :-)]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="70" width="721" height="32" forecolor="#000000" backcolor="#CC0000" uuid="e08050f5-c947-4743-b437-b858c76fabbd"/>
+				<box>
+					<pen lineColor="#990099"/>
+					<topPen lineColor="#990099"/>
+					<leftPen lineColor="#990099"/>
+					<bottomPen lineColor="#990099"/>
+					<rightPen lineColor="#990099"/>
+				</box>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement x="553" y="12" width="144" height="20" forecolor="#FFFFFF" uuid="ea600524-8ca2-4151-94dd-391d5d7fc3ac"/>
+					<textElement textAlignment="Right">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="12" y="7" width="507" height="20" forecolor="#99FF99" uuid="9a5d03f2-0250-4e4a-98ee-c98500b734c2"/>
+					<textElement>
+						<font fontName="Arial" size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Novozámocké bytové družstvo, družstvo]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement style="Column header" x="0" y="0" width="113" height="18" forecolor="#000000" uuid="b39ae70b-eff0-4e18-b977-77cfd9906202"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Číslo spisu]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="113" y="0" width="113" height="18" forecolor="#000000" uuid="5396c73d-b6dc-4f27-9970-e2f0736335a8"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rok ESU]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="226" y="0" width="113" height="18" forecolor="#000000" uuid="0e962467-ca58-46c1-8379-975398daa89f"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Typ spisu]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="339" y="0" width="113" height="18" forecolor="#000000" uuid="1d0bf3f6-b9b2-43f4-ab98-8b71e00d92f7"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Účel spisu]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="452" y="0" width="113" height="18" forecolor="#000000" uuid="262c2425-b076-46fd-bd60-c1577b6a7255"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Zalozil]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="565" y="0" width="113" height="18" forecolor="#000000" uuid="fe4469af-2cc2-47cf-8357-3d13ecb8e73a"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Termín od]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="678" y="0" width="113" height="18" forecolor="#000000" uuid="0e06fe7c-abe4-4442-aaee-d7e6f93b5670"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Termín do]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="18" splitType="Stretch">
+			<frame>
+				<reportElement style="Row" mode="Opaque" x="0" y="0" width="797" height="18" uuid="6946d1b8-75bb-48b5-8bc0-beaf42977471"/>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" positionType="Float" x="0" y="0" width="113" height="18" uuid="832848fe-cf92-407a-9472-c15d0e252307"/>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{c_cis_ESU}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" positionType="Float" x="113" y="0" width="113" height="18" uuid="8c07f7e0-ac37-4240-8642-3f5c50d02c35"/>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{i_Rok_ESU}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" positionType="Float" x="226" y="0" width="113" height="18" uuid="190f8693-f3a9-41f3-9ecc-c9e41943cb90"/>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{c_typ_el_spisu}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" positionType="Float" x="339" y="0" width="113" height="18" uuid="2ea179a8-a08a-458e-ad3a-ca6e0e06ab72"/>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{c_ucel_spisu}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" positionType="Float" x="452" y="0" width="113" height="18" uuid="2773de9b-df35-4fd8-a9fc-755ca5c8961e"/>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{c_zalozil}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" positionType="Float" x="565" y="0" width="113" height="18" uuid="1f39c264-a46c-417d-81df-962fd3056100"/>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{d_od}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" positionType="Float" x="678" y="0" width="113" height="18" uuid="a6da8872-83aa-459a-8273-32d8ff5dbc12"/>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{d_do}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="7" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1" uuid="cbd06733-1d07-4427-b404-00c5121e9d87"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="802" height="25" forecolor="#D0B48E" backcolor="#000000" uuid="212780ae-fbd6-4205-95fd-dcf9e9556f6c"/>
+				<textField evaluationTime="Report">
+					<reportElement style="Column header" x="757" y="3" width="40" height="20" forecolor="#FFFFFF" uuid="e1ebd2dc-800e-4747-9758-dac69bc3c35c"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Column header" x="677" y="3" width="80" height="20" forecolor="#FFFFFF" uuid="7e3bee0f-9645-4bee-b4b7-50b7b69533a6"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Strana "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+				</textField>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement style="Column header" x="2" y="3" width="197" height="20" forecolor="#FFFFFF" uuid="8d45cfc2-c71b-4c1e-9899-ff7110df725e"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
